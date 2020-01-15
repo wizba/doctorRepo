@@ -1,0 +1,60 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>DoctorList</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 col-sm-6 color="red">
+        <ion-card>
+          <ion-card-content>
+            <ion-row>
+
+              <ion-icon name="person" class="card-icon"></ion-icon>
+
+              <ion-col col-sm-11>
+                Founded in 1829 on an isthmus between Lake Monona
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-justify-content-end ionic-rating">
+              <ionic4-star-rating #rating activeIcon="ios-star" defaultIcon="ios-star-outline" activeColor="#ff0000"
+                defaultColor="#aaaaaa" readonly="false" rating="2" fontSize="20px"
+                (ratingChanged)="logRatingChange($event)">
+              </ionic4-star-rating>
+            </ion-row>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>-->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>DoctorList</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    
+    <ion-item>
+      <ion-icon name="person"></ion-icon>
+
+      <p class ="card-icon">Dr miles monroe</p>
+      <ionic4-star-rating #rating activeIcon="ios-star" defaultIcon="ios-star-outline" activeColor="#ff0000"
+      defaultColor="#aaaaaa" readonly="false" rating="2" fontSize="10px"
+      (ratingChanged)="logRatingChange($event)">
+    </ionic4-star-rating>
+    </ion-item>
+ 
+  </ion-list>
+</ion-content>

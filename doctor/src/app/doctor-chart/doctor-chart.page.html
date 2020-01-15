@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>doctor-chart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div *ngFor="let msg of messageList" class="message left">
+      <ion-card>
+        <div class="msg-detail">
+          <div class="msg-info">
+              {{msg.name}}
+          </div>
+          <div class="msg-content">
+            <span class="triangle"></span>
+            <p class="line-breaker ">{{msg.text}}</p>
+          </div>
+        </div>
+      </ion-card>
+      
+    </div>
+  </div>
+</ion-content>
+<ion-footer no-border>
+  <div class="input-wrap">        
+    <textarea #messageInput
+              placeholder="Enter your message!"
+              [(ngModel)]="chatMessage"
+              (keyup.enter)="sendMessage()">
+    </textarea>
+    <button ion-button clear icon-only item-right (click)="sendMessage()">
+      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+    </button>
+  </div>     
+</ion-footer>
