@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'doctor-chart',
     loadChildren: () => import('./doctor-chart/doctor-chart.module').then( m => m.DoctorChartPageModule)
+  },
+  {
+    path: 'doctor-details',
+    loadChildren: () => import('./doctor-details/doctor-details.module').then( m => m.DoctorDetailsPageModule)
   }
 ];
 @NgModule({

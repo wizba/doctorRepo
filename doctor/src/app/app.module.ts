@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
+import { DoctorDetailsPageModule } from './doctor-details/doctor-details.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { IonicStorageModule } from '@ionic/storage';
     StarRatingModule,
     TabsPageModule, 
     IonicStorageModule.forRoot(),
+    DoctorDetailsPageModule
   ],
   providers: [
     StatusBar,
