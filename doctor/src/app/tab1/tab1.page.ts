@@ -8,6 +8,26 @@ import { Router } from '@angular/router';
 })
 export class Tab1Page {
 
+  options:Array<any>=[
+    {
+      label :"Find a doctor",
+      icon :"../assets/icon/doctor.svg",
+    },
+    {
+      label :"consult online",
+      icon :"../assets/icon/chat.svg",
+    },
+    {
+      label :"Find a hospital",
+      icon :"../assets/icon/hospital.svg",
+    }
+    ,
+    {
+      label :"Find a hospital",
+      icon :"../assets/icon/calendar.svg"
+    }
+  ]
+
   constructor(private router: Router) {}
 
   openDoctorlist()
