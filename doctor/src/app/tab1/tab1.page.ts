@@ -28,6 +28,13 @@ export class Tab1Page {
     }
   ]
 
+  news=[
+    {
+      title:"",
+      content:"",
+      img:""
+    }
+  ]
   constructor(private router: Router) {}
 
   openDoctorlist()

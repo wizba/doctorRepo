@@ -24,7 +24,7 @@ import { StorageService } from './Services/Storage.service';
     StarRatingModule,
     TabsPageModule, 
     IonicStorageModule.forRoot(),
-    DoctorDetailsPageModule
+    DoctorDetailsPageModule,
   ],
   providers: [
     StatusBar,
