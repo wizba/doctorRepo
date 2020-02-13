@@ -79,14 +79,10 @@
             <ion-text><h4>Top News</h4></ion-text>
         
         </ion-col>
-        <ion-col >
-         
-            <ion-text>view all</ion-text>
-          
-        </ion-col>
+
       </ion-row>
 
-    <ion-slides class="image-slider" loop="true" slidesPerView="2">
+    <ion-slides class="image-slider" loop="true" >
       <ion-slide *ngFor="let img of news">
         <img [src]='img.img' class ="thumb-img"/>
       </ion-slide>

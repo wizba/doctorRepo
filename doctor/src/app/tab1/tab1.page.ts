@@ -50,6 +50,7 @@ export class Tab1Page {
       img:"../assets/img/Health_Main4.jpg"
     }
   ]
+
   constructor(private router: Router) {}
 
   openDoctorlist()
