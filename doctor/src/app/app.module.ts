@@ -1,4 +1,5 @@
 import { StarRatingModule } from 'ionic4-star-rating';
+
 import { TabsPageModule } from './tabs/tabs.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';

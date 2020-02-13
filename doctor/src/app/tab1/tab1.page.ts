@@ -32,7 +32,22 @@ export class Tab1Page {
     {
       title:"",
       content:"",
-      img:""
+      img:"../assets/img/Health_Main.jpg"
+    },
+    {
+      title:"",
+      content:"",
+      img:"../assets/img/Health_Main2.jpg"
+    },
+    {
+      title:"",
+      content:"",
+      img:"../assets/img/Health_Main3.jpg"
+    },
+    {
+      title:"",
+      content:"",
+      img:"../assets/img/Health_Main4.jpg"
     }
   ]
   constructor(private router: Router) {}
